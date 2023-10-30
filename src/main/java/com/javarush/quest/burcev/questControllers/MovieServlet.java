@@ -1,6 +1,6 @@
 package com.javarush.quest.burcev.questControllers;
 
-import com.javarush.quest.burcev.enums.Manager;
+import com.javarush.quest.burcev.enums.*;
 import com.javarush.quest.burcev.enums.Movie;
 import com.javarush.quest.burcev.models.Quest;
 import com.javarush.quest.burcev.models.User;
@@ -26,52 +26,30 @@ public class MovieServlet extends HttpServlet {
         HttpSession session = request.getSession();
         int correct_answer;
         int incorrect_answer;
+        String [] movies = PreparedValues.getMovies();
+        Movie [] enumMovies = PreparedValues.getMoviesEnumMovies();
         String answer = request.getParameter("answer");
-        switch (answer) {
-            case "terminator":
-                request.setAttribute("title", Movie.SECOND_MOVIE);
-                session.setAttribute("title", Movie.SECOND_MOVIE);
+        for (int i = 0; i < 4; i++) {
+            if(answer.equals(movies[i])){
+                request.setAttribute("title", enumMovies[i+1]);
+                session.setAttribute("title",  enumMovies[i+1]);
                 dispatcher_movies.forward(request, response);
                 correct_answer = (int) session.getAttribute("correct_answer");
                 correct_answer += 1;
                 session.setAttribute("correct_answer", correct_answer);
-                break;
-            case "men_in_black":
-                request.setAttribute("title", Movie.THIRD_MOVIE);
-                session.setAttribute("title", Movie.THIRD_MOVIE);
-                dispatcher_movies.forward(request, response);
-                correct_answer = (int) session.getAttribute("correct_answer");
-                correct_answer += 1;
-                session.setAttribute("correct_answer", correct_answer);
-                break;
-            case "brother":
-                request.setAttribute("title", Movie.FOURTH_MOVIE);
-                session.setAttribute("title", Movie.FOURTH_MOVIE);
-                dispatcher_movies.forward(request, response);
-                correct_answer = (int) session.getAttribute("correct_answer");
-                correct_answer += 1;
-                session.setAttribute("correct_answer", correct_answer);
-                break;
-            case "matrix":
-                request.setAttribute("title", Movie.FIFTH_MOVIE);
-                session.setAttribute("title", Movie.FIFTH_MOVIE);
-                dispatcher_movies.forward(request, response);
-                correct_answer = (int) session.getAttribute("correct_answer");
-                correct_answer += 1;
-                session.setAttribute("correct_answer", correct_answer);
-                break;
-            case "pulp_fiction":
-                request.setAttribute("query", Manager.FINAL);
-                correct_answer = (int) session.getAttribute("correct_answer");
-                incorrect_answer = (int)session.getAttribute("incorrect_answer");
-                correct_answer += 1;
-                session.setAttribute("correct_answer", correct_answer);
-                int id =(int)session.getAttribute("number_user");
-                User user = new UserController().getUsers().get(id);
-                UserController.addQuest(user.getId(), new Quest("Movie", correct_answer, incorrect_answer));
-                session.setAttribute("name_of_user", user.getName());
-                dispatcher_manager.forward(request, response);
-                break;
+                return;
+            }
         }
+        request.setAttribute("query", Manager.FINAL);
+        correct_answer = (int) session.getAttribute("correct_answer");
+        incorrect_answer = (int)session.getAttribute("incorrect_answer");
+        correct_answer += 1;
+        session.setAttribute("correct_answer", correct_answer);
+        int id =(int)session.getAttribute("number_user");
+        User user = new UserController().getUsers().get(id);
+        UserController.addQuest(user.getId(), new Quest("Movie", correct_answer, incorrect_answer));
+        session.setAttribute("name_of_user", user.getName());
+        dispatcher_manager.forward(request, response);
+
     }
 }

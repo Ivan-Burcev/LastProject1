@@ -9,10 +9,13 @@
 <html>
 <head>
     <title>Greeting</title>
-<style><%@include file="/static/main.css"%></style>
+<style><%@include file="/static/main.css"%>
+</style>
 </head>
 <body>
+
 <div class="container">
+
     <p>
     Приветствую тебя. Сегодня ты сможешь пройти простой и интересный квест.
     Твоя задача выбрать верный ответ. Ты можешь выбрать один из квестов.
