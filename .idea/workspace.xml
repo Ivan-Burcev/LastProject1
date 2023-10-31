@@ -10,14 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea81e5d-716a-4341-84bc-57e290608d45" name="Changes" comment="this is final comit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/enums/PreparedValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/34b4a026-f242-4585-a0ac-56cdc7a42e32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/34b4a026-f242-4585-a0ac-56cdc7a42e32.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/IntermediateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/IntermediateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/enums/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/enums/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/MovieServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/MovieServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/RiddleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/RiddleServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/userManagement/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/userManagement/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/userControllers/authentication.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/userControllers/authentication.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/userControllers/greeting.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/userControllers/greeting.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/userControllers/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/userControllers/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,6 +337,7 @@
       <workItem from="1698684849726" duration="561000" />
       <workItem from="1698697796503" duration="3809000" />
       <workItem from="1698702683209" duration="1697000" />
+      <workItem from="1698735401989" duration="1974000" />
     </task>
     <task id="LOCAL-00001" summary="one">
       <option name="closed" value="true" />

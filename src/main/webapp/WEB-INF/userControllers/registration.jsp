@@ -23,18 +23,24 @@
         <label  for="password">Введите пароль:</label>
         <input type="text" id="password" name="password">
         <br>
-        <button class="button button2" type="submit">Отправить</button>
+        <button class="button-submit" type="submit">Отправить</button>
     </form>
 
 
 </div>
 <c:if test="${requestScope.incorrect==Manager.INCORRECT_ANSWER}">
     <div class="text-center">
-        <p>
+        <p  style="color: red">
             Такой пользователь уже существует!
         </p>
     </div>
-
+</c:if>
+<c:if test="${requestScope.incorrect==Manager.ANSWER_IS_NULL}">
+    <div class="text-center">
+        <p  style="color: red">
+            Имя пользователя и пароль не могут быть пустыми!
+        </p>
+    </div>
 </c:if>
 </body>
 </html>

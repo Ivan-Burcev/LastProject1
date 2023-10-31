@@ -25,6 +25,13 @@ public class RegistrationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
+
+        if (name==null||password==null||name.isEmpty()||password.isEmpty()){
+            request.setAttribute("incorrect", Manager.ANSWER_IS_NULL);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/userControllers/registration.jsp");
+            requestDispatcher.forward(request, response);
+            return;
+        }
         User user = new User(number, name, password);
         number++;
         if(UserController.addUser(user)){

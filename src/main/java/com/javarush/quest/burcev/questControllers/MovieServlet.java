@@ -24,11 +24,14 @@ public class MovieServlet extends HttpServlet {
         dispatcher_manager = request.getRequestDispatcher("WEB-INF/questController/manager.jsp");
         dispatcher_movies = request.getRequestDispatcher("WEB-INF/questController/movie.jsp");
         HttpSession session = request.getSession();
+
         int correct_answer;
         int incorrect_answer;
+
         String [] movies = PreparedValues.getMovies();
         Movie [] enumMovies = PreparedValues.getMoviesEnumMovies();
         String answer = request.getParameter("answer");
+
         for (int i = 0; i < 4; i++) {
             if(answer.equals(movies[i])){
                 request.setAttribute("title", enumMovies[i+1]);

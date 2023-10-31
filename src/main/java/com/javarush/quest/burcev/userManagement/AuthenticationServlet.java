@@ -25,6 +25,12 @@ public class AuthenticationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
+        if (name==null||password==null||name.isEmpty()||password.isEmpty()){
+            request.setAttribute("incorrect", Manager.ANSWER_IS_NULL);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/userControllers/authentication.jsp");
+            requestDispatcher.forward(request, response);
+            return;
+        }
         User user = new User(0, name, password);
 
         if(UserController.checkUser(user)){
