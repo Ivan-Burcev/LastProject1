@@ -1,5 +1,5 @@
 
-package com.javarush.quest.burcev.questControllers;
+package com.javarush.quest.burcev.servletControllers;
 
 import com.javarush.quest.burcev.enums.*;
 import com.javarush.quest.burcev.enums.Riddles;

@@ -1,9 +1,7 @@
-package com.javarush.quest.burcev.questControllers;
+package com.javarush.quest.burcev.servletControllers;
 
-import com.javarush.quest.burcev.controller.QuestController;
 import com.javarush.quest.burcev.enums.*;
 import com.javarush.quest.burcev.enums.Movie;
-import com.javarush.quest.burcev.models.Quest;
 import com.javarush.quest.burcev.models.User;
 import com.javarush.quest.burcev.controller.UserController;
 import jakarta.servlet.RequestDispatcher;

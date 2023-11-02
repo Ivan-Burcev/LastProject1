@@ -1,4 +1,4 @@
-package com.javarush.quest.burcev.questControllers;
+package com.javarush.quest.burcev.servletControllers;
 
 import com.javarush.quest.burcev.enums.Manager;
 import com.javarush.quest.burcev.enums.Movie;

@@ -1,15 +1,12 @@
-package com.javarush.quest.burcev.questControllers;
+package com.javarush.quest.burcev.servletControllers;
 
 import com.javarush.quest.burcev.enums.Manager;
-import com.javarush.quest.burcev.enums.Movie;
-import com.javarush.quest.burcev.enums.Riddles;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 
 import org.junit.jupiter.api.*;
 
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
 
 import java.io.IOException;

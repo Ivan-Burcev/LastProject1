@@ -11,26 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ea81e5d-716a-4341-84bc-57e290608d45" name="Changes" comment="this is five commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/identification/AuthenticationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/identification/AuthenticationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/identification/GreetingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/identification/GreetingServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/identification/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/identification/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/models/Quest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/models/Quest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/models/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/CorrectAnswerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/CorrectAnswerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/ManagerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/ManagerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/MovieServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/MovieServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/RiddleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/burcev/questControllers/RiddleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/identification/authentication.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/identification/authentication.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/identification/greeting.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/identification/greeting.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/identification/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/identification/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questController/correctAnswerMovie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/questController/correctAnswerMovie.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questController/correctAnswerRiddles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/questController/correctAnswerRiddles.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questController/manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/questController/manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questController/movie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/questController/movie.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questController/riddles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/questController/riddles.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/javarush/quest/burcev/models/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/burcev/models/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/javarush/quest/burcev/questControllers/IntermediateServletTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/javarush/quest/burcev/questControllers/ManagerServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/burcev/questControllers/ManagerServletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,7 +338,7 @@
       <workItem from="1698910261481" duration="358000" />
       <workItem from="1698912835144" duration="1853000" />
       <workItem from="1698914830084" duration="340000" />
-      <workItem from="1698928704122" duration="5067000" />
+      <workItem from="1698928704122" duration="5827000" />
     </task>
     <task id="LOCAL-00001" summary="one">
       <option name="closed" value="true" />
@@ -408,7 +388,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698914682758</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="this is five commit">
+      <option name="closed" value="true" />
+      <created>1698933819916</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698933819916</updated>
+    </task>
+    <task id="LOCAL-00008" summary="this is five commit">
+      <option name="closed" value="true" />
+      <created>1698933925938</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698933925938</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
