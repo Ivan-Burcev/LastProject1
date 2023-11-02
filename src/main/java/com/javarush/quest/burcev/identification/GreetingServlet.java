@@ -1,4 +1,4 @@
-package com.javarush.quest.burcev.userManagement;
+package com.javarush.quest.burcev.identification;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -31,7 +31,7 @@ public class GreetingServlet extends HttpServlet {
         session.setAttribute("number_user", 0);
 
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/userControllers/greeting.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/identification/greeting.jsp");
         requestDispatcher.forward(request,response);
     }
 

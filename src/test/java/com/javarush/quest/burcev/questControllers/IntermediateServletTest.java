@@ -13,7 +13,7 @@ import org.mockito.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-class IntermediateServletTest {
+class CorrectAnswerServletTest {
 
     @Mock
     private HttpServletRequest request;
@@ -27,11 +27,11 @@ class IntermediateServletTest {
     @Mock
     private RequestDispatcher dispatcher_correct_answer_movie;
 
-    private IntermediateServlet intermediateServlet;
+    private CorrectAnswerServlet correctAnswerServletTest;
     @BeforeEach
     void setUp() {
         MockitoAnnotations.initMocks(this);
-        intermediateServlet = new IntermediateServlet();
+        correctAnswerServletTest = new CorrectAnswerServlet();
     }
 
     @Test
@@ -40,7 +40,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("girl");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_riddles).forward(request, response);
     }
@@ -50,7 +50,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("water");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_riddles).forward(request, response);
     }
@@ -60,7 +60,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("ice");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_riddles).forward(request, response);
     }
@@ -70,7 +70,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("newspaper");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_riddles).forward(request, response);
     }
@@ -80,7 +80,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("knife");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_riddles).forward(request, response);
     }
@@ -90,7 +90,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("terminator");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_movie).forward(request, response);
     }
@@ -100,7 +100,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("men_in_black");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_movie).forward(request, response);
     }
@@ -110,7 +110,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("brother");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_movie).forward(request, response);
     }
@@ -120,7 +120,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("matrix");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_movie).forward(request, response);
     }
@@ -130,7 +130,7 @@ class IntermediateServletTest {
 
         when(request.getParameter("answer")).thenReturn("pulp_fiction");
 
-        intermediateServlet.doPost(request, response);
+        correctAnswerServletTest.doPost(request, response);
 
         verify(dispatcher_correct_answer_movie).forward(request, response);
     }

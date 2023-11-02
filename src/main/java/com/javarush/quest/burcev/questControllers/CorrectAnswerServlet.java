@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "intermediateServlet", value = "/intermediate-servlet")
-public class IntermediateServlet extends HttpServlet {
+public class CorrectAnswerServlet extends HttpServlet {
 
 
     @Override
