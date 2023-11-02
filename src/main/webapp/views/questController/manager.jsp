@@ -73,6 +73,7 @@
         <form action="greeting-servlet" method="post">
             <button class="button button3" type="submit">Начать сначала?</button>
         </form>
+
         <form action="manager-servlet" method="get">
             <button class="button button1" type="submit">Попробовать другой квест</button>
         </form>

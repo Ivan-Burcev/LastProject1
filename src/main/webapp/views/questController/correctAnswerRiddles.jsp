@@ -30,7 +30,7 @@
             кто не делал вид, что семя проросло
         </p>
         <div style="text-align: center;">
-            <img style="" src="<c:url value='/images/king.jpg' />"  width="700" height="300"  alt="Король">
+            <img style="" src="<c:url value='/images/king.jpg' />" width="700" height="300" alt="Король">
         </div>
     </div>
     <hr>
@@ -53,7 +53,7 @@
             капли ночной росы на листьях.
         </p>
         <div style="text-align: center;">
-            <img style="" src="<c:url value='/images/water.jpg' />"  width="700" height="300"  alt="Вода">
+            <img style="" src="<c:url value='/images/water.jpg' />" width="700" height="300" alt="Вода">
         </div>
     </div>
     <hr>
@@ -76,7 +76,7 @@
             выпил свои напитки так быстро, что лед не успел растаять и выпустить яд.
         </p>
         <div style="text-align: center;">
-            <img style="" src="<c:url value='/images/ise.jpg' />"  width="700" height="300"  alt="Лёд">
+            <img style="" src="<c:url value='/images/ise.jpg' />" width="700" height="300" alt="Лёд">
         </div>
     </div>
     <hr>
@@ -100,7 +100,7 @@
             так как страницы 9 и 10 газеты не могут быть обращены друг к другу.
         </p>
         <div style="text-align: center;">
-            <img style="" src="<c:url value='/images/newspaper.jpg' />"  width="700" height="300"  alt="Газета">
+            <img style="" src="<c:url value='/images/newspaper.jpg' />" width="700" height="300" alt="Газета">
         </div>
     </div>
     <hr>
@@ -123,7 +123,7 @@
             лишь половина, предназначенная для жертвы.
         </p>
         <div style="text-align: center;">
-            <img style="" src="<c:url value='/images/apple.jpg' />"  width="700" height="300"  alt="Яблоко">
+            <img style="" src="<c:url value='/images/apple.jpg' />" width="700" height="300" alt="Яблоко">
         </div>
     </div>
     <hr>

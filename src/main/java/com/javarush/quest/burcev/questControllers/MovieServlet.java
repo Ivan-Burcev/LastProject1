@@ -1,10 +1,11 @@
 package com.javarush.quest.burcev.questControllers;
 
+import com.javarush.quest.burcev.controller.QuestController;
 import com.javarush.quest.burcev.enums.*;
 import com.javarush.quest.burcev.enums.Movie;
 import com.javarush.quest.burcev.models.Quest;
 import com.javarush.quest.burcev.models.User;
-import com.javarush.quest.burcev.models.UserController;
+import com.javarush.quest.burcev.controller.UserController;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -21,8 +22,8 @@ public class MovieServlet extends HttpServlet {
     public static RequestDispatcher dispatcher_manager;
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        dispatcher_manager = request.getRequestDispatcher("WEB-INF/questController/manager.jsp");
-        dispatcher_movies = request.getRequestDispatcher("WEB-INF/questController/movie.jsp");
+        dispatcher_manager = request.getRequestDispatcher("views/questController/manager.jsp");
+        dispatcher_movies = request.getRequestDispatcher("views/questController/movie.jsp");
         HttpSession session = request.getSession();
 
         int correct_answer;
@@ -49,8 +50,7 @@ public class MovieServlet extends HttpServlet {
         correct_answer += 1;
         session.setAttribute("correct_answer", correct_answer);
         int id =(int)session.getAttribute("number_user");
-        User user = new UserController().getUsers().get(id);
-        UserController.addQuest(user.getId(), new Quest("Movie", correct_answer, incorrect_answer));
+        User user = UserController.getUser(id);
         session.setAttribute("name_of_user", user.getName());
         dispatcher_manager.forward(request, response);
 

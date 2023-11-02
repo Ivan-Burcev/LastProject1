@@ -19,8 +19,8 @@ public class CorrectAnswerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher dispatcher_correct_answer_riddles = request.getRequestDispatcher("WEB-INF/questController/correctAnswerRiddles.jsp");
-        RequestDispatcher dispatcher_correct_answer_movie = request.getRequestDispatcher("WEB-INF/questController/correctAnswerMovie.jsp");
+        RequestDispatcher dispatcher_correct_answer_riddles = request.getRequestDispatcher("views/questController/correctAnswerRiddles.jsp");
+        RequestDispatcher dispatcher_correct_answer_movie = request.getRequestDispatcher("views/questController/correctAnswerMovie.jsp");
 
         Movie[] moviesEnum = PreparedValues.getMoviesEnumMovies();
         Riddles[] riddlesEnum = PreparedValues.getRiddlesEnum();

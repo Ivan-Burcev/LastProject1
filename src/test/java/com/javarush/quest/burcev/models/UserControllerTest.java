@@ -1,5 +1,6 @@
 package com.javarush.quest.burcev.models;
 
+import com.javarush.quest.burcev.controller.UserController;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,7 +21,7 @@ class UserControllerTest {
     @Test
     void addQuestTest(){
         UserController.addUser(new User(1, "1", "1"));
-        UserController.addQuest(1, new Quest("name", 1, 1));
+
 
     }
 

@@ -41,9 +41,9 @@ class ManagerServletTest {
         MockitoAnnotations.initMocks(this);
         managerServlet = new ManagerServlet();
         when(request.getSession()).thenReturn(session);
-        when(request.getRequestDispatcher("WEB-INF/quest/manager.jsp")).thenReturn(dispatcher_manager);
-        when(request.getRequestDispatcher("WEB-INF/quest/riddles.jsp")).thenReturn(dispatcher_riddles);
-        when(request.getRequestDispatcher("WEB-INF/quest/movie.jsp")).thenReturn(dispatcher_movies);
+        when(request.getRequestDispatcher("WEB-INF/questController/manager.jsp")).thenReturn(dispatcher_manager);
+        when(request.getRequestDispatcher("WEB-INF/questController/riddles.jsp")).thenReturn(dispatcher_riddles);
+        when(request.getRequestDispatcher("WEB-INF/questController/movie.jsp")).thenReturn(dispatcher_movies);
     }
     @Test
     public void testDoGet() throws ServletException, IOException {

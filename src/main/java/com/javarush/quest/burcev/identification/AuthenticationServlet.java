@@ -2,7 +2,7 @@ package com.javarush.quest.burcev.identification;
 
 import com.javarush.quest.burcev.enums.Manager;
 import com.javarush.quest.burcev.models.User;
-import com.javarush.quest.burcev.models.UserController;
+import com.javarush.quest.burcev.controller.UserController;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -17,7 +17,7 @@ import java.io.IOException;
 public class AuthenticationServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/identification/authentication.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/identification/authentication.jsp");
         requestDispatcher.forward(request,response);
     }
 
@@ -27,7 +27,7 @@ public class AuthenticationServlet extends HttpServlet {
         String password = request.getParameter("password");
         if (name==null||password==null||name.isEmpty()||password.isEmpty()){
             request.setAttribute("incorrect", Manager.ANSWER_IS_NULL);
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/identification/authentication.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/identification/authentication.jsp");
             requestDispatcher.forward(request, response);
             return;
         }
@@ -37,12 +37,12 @@ public class AuthenticationServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("number_user", user.getId());
             request.setAttribute("query", Manager.START);
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/questController/manager.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/questController/manager.jsp");
             requestDispatcher.forward(request, response);
         } else {
 
             request.setAttribute("incorrect", Manager.INCORRECT_ANSWER);
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/identification/authentication.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/identification/authentication.jsp");
             requestDispatcher.forward(request, response);
         }
     }

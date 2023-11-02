@@ -31,16 +31,16 @@ public class ManagerServlet extends HttpServlet {
         session.setAttribute("correct_answer", correct_answer);
         session.setAttribute("incorrect_answer", incorrect_answer);
 
-        dispatcher_manager = request.getRequestDispatcher("WEB-INF/questController/manager.jsp");
+        dispatcher_manager = request.getRequestDispatcher("views/questController/manager.jsp");
         request.setAttribute("query", Manager.START );
         dispatcher_manager.forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        dispatcher_riddles = request.getRequestDispatcher("WEB-INF/questController/riddles.jsp");
-        dispatcher_movies = request.getRequestDispatcher("WEB-INF/questController/movie.jsp");
-        dispatcher_manager = request.getRequestDispatcher("WEB-INF/questController/manager.jsp");
+        dispatcher_riddles = request.getRequestDispatcher("views/questController/riddles.jsp");
+        dispatcher_movies = request.getRequestDispatcher("views/questController/movie.jsp");
+        dispatcher_manager = request.getRequestDispatcher("views/questController/manager.jsp");
         HttpSession session = request.getSession();
         int incorrect_answer;
         List<Movie> movies;

@@ -1,15 +1,22 @@
 package com.javarush.quest.burcev.models;
 
 public class Quest {
-
+    private static int countId = 0;
+    private int id;
+    private int userId;
     private String name_quest;
     private int correct_answer;
     private int incorrect_answer;
 
-    public Quest(String name_quest, int correct_answer, int incorrect_answer) {
+    private Quest(int id, int userId, String name_quest, int correct_answer, int incorrect_answer) {
+        this.id = id;
+        this.userId = userId;
         this.name_quest = name_quest;
         this.correct_answer = correct_answer;
         this.incorrect_answer = incorrect_answer;
+    }
+    public static Quest fabricQuest(int userId, String name_quest, int correct_answer, int incorrect_answer){
+        return new Quest(countId++, userId, name_quest, correct_answer, incorrect_answer);
     }
 
     @Override
@@ -41,5 +48,19 @@ public class Quest {
         this.incorrect_answer = incorrect_answer;
     }
 
+    public int getUserId() {
+        return userId;
+    }
 
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }

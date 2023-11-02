@@ -31,7 +31,7 @@ public class GreetingServlet extends HttpServlet {
         session.setAttribute("number_user", 0);
 
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/identification/greeting.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/identification/greeting.jsp");
         requestDispatcher.forward(request,response);
     }
 
