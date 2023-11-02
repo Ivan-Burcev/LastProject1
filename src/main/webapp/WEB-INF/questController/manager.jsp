@@ -70,17 +70,9 @@
 
     <div class="button-container">
 
-
-
-        <%String at_first = "at_first";%>
         <form action="greeting-servlet" method="post">
-
-<%--            <input type="hidden" name="answer" value="<%= at_first%>">--%>
             <button class="button button3" type="submit">Начать сначала?</button>
         </form>
-<%--        <form action="user-servlet" method="post">--%>
-<%--            <button class="button button2" type="submit">Таблица участников</button>--%>
-<%--        </form>--%>
         <form action="manager-servlet" method="get">
             <button class="button button1" type="submit">Попробовать другой квест</button>
         </form>
