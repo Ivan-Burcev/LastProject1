@@ -11,7 +11,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Correct Answer Riddles</title>
     <style>
         <%@include file="/static/main.css"%>
     </style>

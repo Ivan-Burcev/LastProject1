@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Riddles</title>
     <style>
         <%@include file="/static/main.css"%>
     </style>

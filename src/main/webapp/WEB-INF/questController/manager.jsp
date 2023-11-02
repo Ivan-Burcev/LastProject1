@@ -11,7 +11,7 @@
 <html>
 <head>
 
-    <title>Title</title>
+    <title>Manager</title>
     <style>
         <%@include file="/static/main.css"%>
     </style>
@@ -70,12 +70,12 @@
 
     <div class="button-container">
 
-        <form action="greeting-servlet" method="get">
+
 
         <%String at_first = "at_first";%>
-        <form action="greeting" method="get">
-            <input type="hidden" name="answer" value="<%= at_first%>">
+        <form action="greeting-servlet" method="post">
 
+<%--            <input type="hidden" name="answer" value="<%= at_first%>">--%>
             <button class="button button3" type="submit">Начать сначала?</button>
         </form>
 <%--        <form action="user-servlet" method="post">--%>

@@ -12,7 +12,7 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>Correct Answer Movies</title>
     <style>
         <%@include file="/static/main.css"%>
     </style>

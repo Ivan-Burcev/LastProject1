@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Movie</title>
     <style>
 
         <%@include file="/static/main.css"%>
