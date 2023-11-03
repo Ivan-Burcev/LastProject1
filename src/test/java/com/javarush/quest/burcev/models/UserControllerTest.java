@@ -1,9 +1,13 @@
 package com.javarush.quest.burcev.models;
 
 import com.javarush.quest.burcev.controller.UserController;
+import com.javarush.quest.burcev.enums.PreparedValues;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.verify;
+import org.mockito.*;
+import static org.mockito.Mockito.*;
 
 class UserControllerTest {
     @Test
@@ -20,8 +24,6 @@ class UserControllerTest {
     }
     @Test
     void addQuestTest(){
-        UserController.addUser(new User(1, "1", "1"));
-
 
     }
 

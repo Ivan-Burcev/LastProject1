@@ -11,6 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8ea81e5d-716a-4341-84bc-57e290608d45" name="Changes" comment="this is five commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/javarush/quest/burcev/servletControllers/ManagerServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/burcev/servletControllers/ManagerServletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +25,9 @@
         <option value="Enum" />
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -96,14 +98,30 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.javarush.quest.burcev.identification" />
+      <recent name="com.javarush.quest.burcev.servletControllers" />
       <recent name="com.javarush.quest.burcev.userManagement" />
       <recent name="com.javarush.quest.burcev.questControllers" />
       <recent name="com.javarush.quest.burcev.models" />
-      <recent name="com.example.thelastproject.servlets" />
-      <recent name="com.example.thelastproject1" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.13">
+  <component name="RunManager" selected="JUnit.UserControllerTest">
+    <configuration name="AuthenticationServletTest.testDoGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TheLastProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.burcev.identification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.identification" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.identification.AuthenticationServletTest" />
+      <option name="METHOD_NAME" value="testDoGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GreetingServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TheLastProject1" />
       <extension name="coverage">
@@ -112,9 +130,8 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.userManagement" />
-      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.userManagement.GreetingServletTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.identification" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.identification.GreetingServletTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,58 +145,41 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.userManagement" />
-      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.userManagement.GreetingServletTest" />
+      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.identification" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.identification.GreetingServletTest" />
       <option name="METHOD_NAME" value="testDoGet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerServletTest.testDoGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationServletTest.testDoPostWithValidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TheLastProject1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javarush.quest.burcev.questControllers.*" />
+          <option name="PATTERN" value="com.javarush.quest.burcev.identification.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.questControllers" />
-      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.questControllers.ManagerServletTest" />
-      <option name="METHOD_NAME" value="testDoGet" />
+      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.identification" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.identification.RegistrationServletTest" />
+      <option name="METHOD_NAME" value="testDoPostWithValidData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerServletTest.testDoPostMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TheLastProject1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javarush.quest.burcev.questControllers.*" />
+          <option name="PATTERN" value="com.javarush.quest.burcev.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.questControllers" />
-      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.questControllers.ManagerServletTest" />
-      <option name="METHOD_NAME" value="testDoPostMovie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerServletTest.testDoPostRiddle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TheLastProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.javarush.quest.burcev.questControllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.questControllers" />
-      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.questControllers.ManagerServletTest" />
-      <option name="METHOD_NAME" value="testDoPostRiddle" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.javarush.quest.burcev.models" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.burcev.models.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -272,20 +272,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AuthenticationServletTest.testDoGet" />
+      <item itemvalue="JUnit.RegistrationServletTest.testDoPostWithValidData" />
+      <item itemvalue="JUnit.UserControllerTest" />
       <item itemvalue="JUnit.GreetingServletTest.testDoGet" />
-      <item itemvalue="JUnit.ManagerServletTest.testDoGet" />
-      <item itemvalue="JUnit.ManagerServletTest.testDoPostMovie" />
-      <item itemvalue="JUnit.ManagerServletTest.testDoPostRiddle" />
       <item itemvalue="JUnit.GreetingServletTest" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.13" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GreetingServletTest" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.AuthenticationServletTest.testDoGet" />
+        <item itemvalue="JUnit.RegistrationServletTest.testDoPostWithValidData" />
         <item itemvalue="JUnit.GreetingServletTest.testDoGet" />
-        <item itemvalue="JUnit.ManagerServletTest.testDoPostRiddle" />
-        <item itemvalue="JUnit.ManagerServletTest.testDoPostMovie" />
-        <item itemvalue="JUnit.ManagerServletTest.testDoGet" />
+        <item itemvalue="JUnit.GreetingServletTest" />
       </list>
     </recent_temporary>
   </component>
@@ -339,6 +339,11 @@
       <workItem from="1698912835144" duration="1853000" />
       <workItem from="1698914830084" duration="340000" />
       <workItem from="1698928704122" duration="5827000" />
+      <workItem from="1698938857137" duration="803000" />
+      <workItem from="1698949049872" duration="769000" />
+      <workItem from="1698950300726" duration="6494000" />
+      <workItem from="1699006185299" duration="643000" />
+      <workItem from="1699032296575" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="one">
       <option name="closed" value="true" />
@@ -404,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698933925938</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="this is five commit">
+      <option name="closed" value="true" />
+      <created>1698939059370</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698939059370</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
